@@ -1656,7 +1656,7 @@ float: right;
 	color: #fff;
 }
 
-.head_top {background: #ffc221;
+.head_top {background: #1B4F72;
 margin-bottom: 35px;
 }
 ul.sociel_link {
@@ -1670,14 +1670,14 @@ float: left;
 .top-box p {
 	float: right;
 	padding-top: 10px;
-    color: #000;
+    color: #c3c3c3;
 }
 ul.sociel_link li {
 	display: inline-block;
 }
 
 ul.sociel_link li a {
-color: #000;
+color: #C3C3C3;
 width: 50px;
 height: 50px;
 float: left;
