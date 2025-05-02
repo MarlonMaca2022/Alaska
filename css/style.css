@@ -76,6 +76,14 @@ h6 {
 	margin: 0
 }
 
+.historia {
+	text-align: center;
+	color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+}
+
 h1 {
 	font-size: 24px
 }
