@@ -1764,7 +1764,7 @@ margin-top: 20px;
 .title h2 {
 	font-size: 50px;
 	line-height: 55px;
-	color:#ffc221;
+	color:#0511F2;
 	font-weight: 500;
 	text-transform: uppercase;
     margin-bottom: 27px;
@@ -1794,7 +1794,7 @@ margin-top: 20px;
 }
 
 .choose_bg {
-	background: #f9be20;
+	background: #021E73;
 }
 
 
@@ -1824,20 +1824,20 @@ margin-top: 20px;
 }
 
 .read-more  {
-	width: 190px;
+width: 190px;
 margin: 0 auto;
 background: #fff;
 display: block;
-border: #f9be20 solid 2px;
+border: #021E73 solid 2px;
 text-align: center;
 padding: 10px 0px;
-color: #0a0401 !important;
+color: #000000 !important;
 font-size: 20px;
 margin-top: 40px;
 }
 .read-more:hover {
-	background: #f9be20;
-	color: #0a0401;
+	background: #021E73;
+	color: #A29FA6 !important;
 }
 
 /** end whyschose section **/
@@ -2158,11 +2158,12 @@ ul.lik li a:hover {
 	font-weight: bold;
 	font-size: 40px !important;
 	text-transform: uppercase;
+	color: #A29FA6;
 }
 
 
 .brand_color {
-     background-color: #ffc221;
+     background-color: #03258C;
 }
 .brand_color .titlepage {
      margin-top: 70px;
