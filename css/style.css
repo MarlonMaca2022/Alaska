@@ -2378,24 +2378,95 @@ text-align: center;
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* 2) Haz que el contenedor del carousel llene el viewport */
+/* 2) Slider: altura fija en viewport */
 .banner-main {
-  height: 60vh;       /* 100% de la altura de la ventana */
+  height: 50vh;    /* 50% de la altura de la ventana */
   overflow: hidden;
 }
 
-/* 3) Cada ítem y su imagen deben estirarse y recortarse proporcionalmente */
-.banner-main .carousel-item {
-  height: 60%;
+/* 3) Propaga esa altura a inner, items e imágenes */
+.banner-main .carousel-inner,
+.banner-main .carousel-item,
+.banner-main .carousel-item img {
+  height: 100%;
 }
 
+/* 4) Que las imágenes cubran sin deformarse */
 .banner-main .carousel-item img {
   width: 100%;
-  height: 60%;
-  object-fit: cover;   /* mantiene proporción y cubre todo el área */
+  object-fit: cover;
+}
+
+.history-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;           /* espacio entre imagen y texto */
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-block__image {
+  flex: 1;
+}
+
+.history-block__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.history-block__content {
+  flex: 1;
+}
+
+.history-block__subtitle {
+  font-size: 1.5rem;
+  color: #1e40af;      /* azul intenso */
+  margin-bottom: 0.5rem;
+}
+
+.history-block__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.history-block__btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f59e0b;  /* amarillo/naranja */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.history-block__btn:hover {
+  background-color: #d97706;
+}
+
+/* Responsive: apila en móvil */
+@media (max-width: 768px) {
+  .history-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-block__image,
+  .history-block__content {
+    width: 100%;
+  }
+
+  .history-block__content {
+    margin-top: 2rem;
+  }
 }
