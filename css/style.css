@@ -2134,13 +2134,13 @@ ul.lik li a:hover {
 }
 
 .copyright {
-	background-color: #ffc221;
+	background-color: #1B4F72;
 	padding: 20px 0px;
 	margin-top: 70px;
 }
 
 .copyright p {
-	color: #023023;
+	color: #c3c3c3;
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
@@ -2392,7 +2392,8 @@ html, body {
 .banner-main .carousel-inner,
 .banner-main .carousel-item,
 .banner-main .carousel-item img {
-  height: 100%;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 /* 4) Que las imágenes cubran sin deformarse */
