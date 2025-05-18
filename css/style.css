@@ -1722,31 +1722,32 @@ font-size: 18px;
 	color: #020000;
 	font-size: 85px;
    	line-height: 90px;
-
+	margin-left: -100px;
 	text-transform: uppercase;
 }
 .banner-main .carousel-caption p {
 	color: #050000;
     font-weight: 500;
-    	
+	margin-left: -100px;
     line-height: 23px;
 	 }
 .banner-main .carousel-caption a {
     width: 250px;
-background: #ffc221;
+background: #03258C;
 padding: 9px 0px;
 color: #fff;
 font-size: 17px;
 border-radius: 30px 0px 30px 30px;
 display: inline-block;
 text-align: center;
+margin-left: -50px;
 margin-top: 20px;
 
 }
 .banner-main .carousel-caption a:hover {
 	background: #000;
 }
-.yellow_bold {color: #ffc221;}
+.yellow_bold {color: #03258C;}
 
 /** whyschose section **/
 
@@ -2471,4 +2472,32 @@ html, body {
   .history-block__content {
     margin-top: 2rem;
   }
+}
+
+
+.add-to-cart-button {
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0511F2;  /* Azul de la marca */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;             /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave para la aparición */
+}
+
+.product-box:hover .add-to-cart-button {
+    opacity: 1;             /* Aparece al hacer hover en el producto */
+}
+
+.product-box:hover {
+    border-color: #03258C; /* Opcional: cambia el borde al hacer hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional:  agrega sombra */
+}
+
+.add-to-cart-button:hover {
+    background-color: #03258C; /* Azul más oscuro al hacer hover en el botón */
 }
