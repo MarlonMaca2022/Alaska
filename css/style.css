@@ -2519,3 +2519,109 @@ html, body {
 .add-to-cart-button:hover {
     background-color: #03258C; /* Azul más oscuro al hacer hover en el botón */
 }
+
+    ```
+
+---
+
+### **2. Adiciones para `style.css` (al final del archivo):**
+
+```css
+/* --- Estilos para la Galería Minimalista --- */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas en desktop, se ajusta */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; /* Altura fija para todas las miniaturas */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    color: #fff;
+    padding: 15px;
+    transform: translateY(100%); /* Oculto por defecto */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0); /* Muestra el overlay al pasar el ratón */
+}
+
+.gallery-overlay h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+    color: #fff; /* Título blanco */
+    font-weight: 600;
+}
+
+.gallery-overlay p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc; /* Texto de descripción más claro */
+}
+
+/* Ajustes para Fancybox */
+.fancybox-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+    padding: 10px 20px;
+}
+
+/* Responsividad */
+@media (max-width: 991px) { /* Tabletas */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 767px) { /* Móviles */
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        gap: 15px;
+    }
+    .gallery-item img {
+        height: 220px; /* Ajuste de altura para móviles */
+    }
+    .gallery-overlay h4 {
+        font-size: 1.2rem;
+    }
+    .gallery-overlay p {
+        font-size: 0.9rem;
+    }
+}
