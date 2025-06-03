@@ -2363,7 +2363,7 @@ text-align: center;
 
 /** slider arrow **/
 
-#main_slider .carousel-control-prev,
+# .carousel-control-prev,
 #main_slider .carousel-control-next {
 	width: 52px;
 	height: 52px;
@@ -2395,6 +2395,7 @@ text-align: center;
 	bottom: 10px;
 }
 
+
 html, body {
   margin: 0;
   padding: 0;
@@ -2402,7 +2403,7 @@ html, body {
 
 /* 2) Slider: altura fija en viewport */
 .banner-main {
-  height: 50vh;    /* 50% de la altura de la ventana */
+  height: 500px;  /*   50% de la altura de la ventana */
   overflow: hidden;
 }
 
@@ -2417,6 +2418,7 @@ html, body {
 /* 4) Que las imágenes cubran sin deformarse */
 .banner-main .carousel-item img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
